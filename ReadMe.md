@@ -49,6 +49,7 @@ relevant features and a second vector (featidvec) representing the indexes of th
 features in the values data.
 
 The values in the featvec vector are then modified to make the feature names more descriptive.
+This vector is later used when renaming the columns in the final dataset.
 
 The featidvec vector is then used to generate a vector which is passed to the colClasses
 parameter of read.table() so that only the relevent columns are retrieved.
