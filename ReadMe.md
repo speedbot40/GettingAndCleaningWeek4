@@ -45,7 +45,7 @@ The source datasets for the measurement values are quite large and contain data 
 not included in the summary dataset. Therefore, for purposes of efficiency, the script
 first interrogates the features.txt data to determine which columns represent mean and
 standard deviation data and produces two vectors, one vector (featvec) representing the names of the
-relevant features and a second vector (featidvec) representing the indexes of those
+relevant features and a second vector (featidvec) representing the column indexes of those
 features in the values data.
 
 The values in the featvec vector are then modified to make the feature names more descriptive.
@@ -57,14 +57,12 @@ parameter of read.table() so that only the relevent columns are retrieved.
 The data values for the Test and Train data are then separately retrieved and combined with their
 associated subject identifier and activity identifier data.
 
-The Test and Train data are then combined into a single dataset and the activity identfiers are
+The separate combined Test and Train data frames are then combined into a single data frame and the activity identfiers are
 replaced with the descriptive activity labels.
 
-The column names in the combined dataset are then renamed.
+The column names in the combined data frame are then renamed.
 
-The combined dataset is then summarized by grouping by subject and activity, and applying the mean.
+The combined data frame is then summarized by grouping by subject and activity, and applying the mean.
 
-Finally, the summarized data set is output to the working directory as "HAR_summarized_tidy.txt".
-
-Note that the "header=TRUE" option must be used when reading the output file with read.table().
+Finally, a table of the summarized data is output to the working directory as "HAR_summarized_tidy.txt". Note that the "header=TRUE" option must be used when reading the output file with read.table().
 
