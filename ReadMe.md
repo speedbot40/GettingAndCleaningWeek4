@@ -1,6 +1,6 @@
 # run_Analysis.R
 
-This script reads data collected for an experiment on Human Activity Recognition Using Smartphones.
+This script summarizes data collected for an experiment on Human Activity Recognition Using Smartphones.
 Details of the experiment can be found at:
 
 (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
@@ -14,7 +14,7 @@ measurements, merges and combines it with data representing the activity
 names and subjects, and produces a tidy data set containing the average of
 each variable for each combination of subject and activity.
 
-# Script Execution:
+## Script Execution:
 
 This script requires that you have the sqldf and dplyr packages already installed.
 
@@ -39,7 +39,7 @@ The script will execute and a tidy dataset ("HAR_summarized_tidy.txt") will be c
 in your R working directory.
 
 
-# Script Methodology:
+## Script Methodology:
 
 The source datasets for the measurement values are quite large and contain data for Features
 not included in the summary dataset. Therefore, for purposes of efficiency, the script
