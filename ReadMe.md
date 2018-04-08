@@ -52,12 +52,12 @@ The values in the featvec vector are then modified to make the feature names mor
 This vector is later used when renaming the columns in the final dataset.
 
 The featidvec vector is then used to generate a vector which is passed to the colClasses
-parameter of read.table() so that only the relevent columns are retrieved.
+parameter of read.table() so that only the relevant columns are retrieved.
 
 The data values for the Test and Train data are then separately retrieved and combined with their
 associated subject identifier and activity identifier data.
 
-The separate combined Test and Train data frames are then combined into a single data frame and the activity identfiers are
+The separate combined Test and Train data frames are then combined into a single data frame and the activity identifiers are
 replaced with the descriptive activity labels.
 
 The column names in the combined data frame are then renamed.
