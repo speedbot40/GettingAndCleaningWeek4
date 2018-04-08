@@ -43,12 +43,12 @@ This summary data set was produced by:
 
 
 	
-A description of each column included in this summary dataset follows.
+## Columns included in this summary dataset:
 ======================================================================
 
 
 subject
-* identifier of subject perfoming the activity, ranged from 1 to 30
+* identifier of subject performing the activity, ranged from 1 to 30
 
 activity
 * activity performed (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
