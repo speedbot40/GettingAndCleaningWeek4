@@ -44,7 +44,6 @@ This summary data set was produced by:
 
 	
 ## Columns included in this summary dataset:
-======================================================================
 
 
 subject
